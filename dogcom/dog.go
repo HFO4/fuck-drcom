@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	"../packet"
+	"github.com/HFO4/fuck-drcom/packet"
 )
 
 //DogCom DrCom配置
@@ -221,6 +221,7 @@ func (dog *DogCom) HeartBeats1() {
 			break
 		} else {
 			fmt.Printf("[heartbeats1] recv/not expected %X\n", recvData[:n])
+			dog.Con.Write(data)
 		}
 	}
 	fmt.Printf("[heartbeats1] recv %X\n", recvData[:n])

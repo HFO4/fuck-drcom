@@ -1,14 +1,14 @@
 package main
 
 import (
-	"./dogcom"
 	"fmt"
+	"github.com/HFO4/fuck-drcom/dogcom"
 )
 
 func main() {
 	DogCom := dogcom.DogCom{
 		Username:           "20172333",     //用户名，一般为学号
-		Password:           "114514",       //密码
+		Password:           "23333",        //密码
 		Server:             "10.254.7.4",   //认证服务器
 		Mac:                0x3c52823422f9, //MAC地址
 		CONTROLCHECKSTATUS: byte(0x20),
